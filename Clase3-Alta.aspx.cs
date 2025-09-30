@@ -21,7 +21,7 @@ namespace Clase1_lp3
 
             using (SqlConnection conectar = new SqlConnection(conexion))
             {
-                string insertar = "INSERT INTO Usuario (nombre, clave, mail) VALUES (@Nombre, @Clave, @Mail)";
+                string insertar = "INSERT INTO Usuarios (nombre, clave, mail) VALUES (@Nombre, @Clave, @Mail)";
 
                 using (SqlCommand comando = new SqlCommand(insertar, conectar))
                 {
@@ -43,3 +43,5 @@ namespace Clase1_lp3
             }
         }
     }
+}
+    

@@ -12,11 +12,11 @@
         <div>
             Alta de usuarios<br />
             <br />
-            Nombre:<asp:TextBox runat="server" style="height: 25px"></asp:TextBox>
+            Nombre:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
-            clave:<asp:TextBox runat="server"></asp:TextBox>
+            clave:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
             <br />
-            mail:<asp:TextBox runat="server"></asp:TextBox>
+            mail:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
             <br />
             <br />
@@ -24,7 +24,7 @@
             <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />
-            <asp:HyperLink ID="HyperLink1" runat="server">Retornar</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Clase-Consulta.aspx">Consultas</asp:HyperLink>
         </div>
     </form>
 </body>
