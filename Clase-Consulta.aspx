@@ -17,7 +17,7 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Buscar" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Buscar" BackColor="#006600" />
             <asp:Label ID="Label1" runat="server"></asp:Label>
         </div>
         <p>

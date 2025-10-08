@@ -100,6 +100,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Alta-P1.aspx" />
+    <Content Include="AltaGimnasio-P1.aspx" />
+    <Content Include="AltaPlanes-P1.aspx" />
+    <Content Include="Borrar-P1.aspx" />
     <Content Include="Clase-Consulta.aspx" />
     <Content Include="Clase1.aspx" />
     <Content Include="Clase2.aspx" />
@@ -111,6 +115,12 @@
     <Content Include="Clase4-Consulta.aspx" />
     <Content Include="Clase4-Modificaciones.aspx" />
     <Content Include="Clase4Index.aspx" />
+    <Content Include="Clase5-Consulta.aspx" />
+    <Content Include="Clase5-Modificaion.aspx" />
+    <Content Include="Clse5-Alta.aspx" />
+    <Content Include="Consulta-P1.aspx" />
+    <Content Include="ConsultaPlanes-p1.aspx" />
+    <Content Include="ConsultasActividades-P1.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -132,6 +142,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Index-P1.aspx" />
+    <Content Include="Modificaion-P1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -195,6 +207,27 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alta-P1.aspx.cs">
+      <DependentUpon>Alta-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alta-P1.aspx.designer.cs">
+      <DependentUpon>Alta-P1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaGimnasio-P1.aspx.cs">
+      <DependentUpon>AltaGimnasio-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaGimnasio-P1.aspx.designer.cs">
+      <DependentUpon>AltaGimnasio-P1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaPlanes-P1.aspx.cs">
+      <DependentUpon>AltaPlanes-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaPlanes-P1.aspx.designer.cs">
+      <DependentUpon>AltaPlanes-P1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -204,6 +237,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Borrar-P1.aspx.cs">
+      <DependentUpon>Borrar-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Borrar-P1.aspx.designer.cs">
+      <DependentUpon>Borrar-P1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Clase-Consulta.aspx.cs">
       <DependentUpon>Clase-Consulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +321,48 @@
     <Compile Include="Clase4Index.aspx.designer.cs">
       <DependentUpon>Clase4Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clase5-Consulta.aspx.cs">
+      <DependentUpon>Clase5-Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clase5-Consulta.aspx.designer.cs">
+      <DependentUpon>Clase5-Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clase5-Modificaion.aspx.cs">
+      <DependentUpon>Clase5-Modificaion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clase5-Modificaion.aspx.designer.cs">
+      <DependentUpon>Clase5-Modificaion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clse5-Alta.aspx.cs">
+      <DependentUpon>Clse5-Alta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clse5-Alta.aspx.designer.cs">
+      <DependentUpon>Clse5-Alta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta-P1.aspx.cs">
+      <DependentUpon>Consulta-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta-P1.aspx.designer.cs">
+      <DependentUpon>Consulta-P1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPlanes-p1.aspx.cs">
+      <DependentUpon>ConsultaPlanes-p1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaPlanes-p1.aspx.designer.cs">
+      <DependentUpon>ConsultaPlanes-p1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasActividades-P1.aspx.cs">
+      <DependentUpon>ConsultasActividades-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultasActividades-P1.aspx.designer.cs">
+      <DependentUpon>ConsultasActividades-P1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -297,6 +379,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index-P1.aspx.cs">
+      <DependentUpon>Index-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index-P1.aspx.designer.cs">
+      <DependentUpon>Index-P1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modificaion-P1.aspx.cs">
+      <DependentUpon>Modificaion-P1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modificaion-P1.aspx.designer.cs">
+      <DependentUpon>Modificaion-P1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
