@@ -99,11 +99,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="abmmarcas.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Alta-P1.aspx" />
+    <Content Include="AltaAutos-ABM.aspx" />
     <Content Include="AltaGimnasio-P1.aspx" />
     <Content Include="AltaPlanes-P1.aspx" />
     <Content Include="Borrar-P1.aspx" />
+    <Content Include="BorrarABM.aspx" />
     <Content Include="Clase-Consulta.aspx" />
     <Content Include="Clase1.aspx" />
     <Content Include="Clase2.aspx" />
@@ -117,10 +120,16 @@
     <Content Include="Clase4Index.aspx" />
     <Content Include="Clase5-Consulta.aspx" />
     <Content Include="Clase5-Modificaion.aspx" />
+    <Content Include="Clase7-2.aspx" />
+    <Content Include="Clase7.aspx" />
+    <Content Include="Clase8-Ejercicio.aspx" />
+    <Content Include="Clase8.aspx" />
     <Content Include="Clse5-Alta.aspx" />
+    <Content Include="Consulta-ABM.aspx" />
     <Content Include="Consulta-P1.aspx" />
     <Content Include="ConsultaPlanes-p1.aspx" />
     <Content Include="ConsultasActividades-P1.aspx" />
+    <Content Include="ConsultMarca-ABM.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -139,8 +148,12 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Default-ABM.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="fotos\auto1.jpg" />
+    <Content Include="fotos\auto2.jpg" />
+    <Content Include="fotos\lanzamiento-fiat-cronos.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Index-P1.aspx" />
     <Content Include="Modificaion-P1.aspx" />
@@ -207,12 +220,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abmmarcas.aspx.cs">
+      <DependentUpon>abmmarcas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="abmmarcas.aspx.designer.cs">
+      <DependentUpon>abmmarcas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Alta-P1.aspx.cs">
       <DependentUpon>Alta-P1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Alta-P1.aspx.designer.cs">
       <DependentUpon>Alta-P1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaAutos-ABM.aspx.cs">
+      <DependentUpon>AltaAutos-ABM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaAutos-ABM.aspx.designer.cs">
+      <DependentUpon>AltaAutos-ABM.aspx</DependentUpon>
     </Compile>
     <Compile Include="AltaGimnasio-P1.aspx.cs">
       <DependentUpon>AltaGimnasio-P1.aspx</DependentUpon>
@@ -243,6 +270,13 @@
     </Compile>
     <Compile Include="Borrar-P1.aspx.designer.cs">
       <DependentUpon>Borrar-P1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarABM.aspx.cs">
+      <DependentUpon>BorrarABM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarABM.aspx.designer.cs">
+      <DependentUpon>BorrarABM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Clase-Consulta.aspx.cs">
       <DependentUpon>Clase-Consulta.aspx</DependentUpon>
@@ -335,12 +369,47 @@
     <Compile Include="Clase5-Modificaion.aspx.designer.cs">
       <DependentUpon>Clase5-Modificaion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clase7-2.aspx.cs">
+      <DependentUpon>Clase7-2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clase7-2.aspx.designer.cs">
+      <DependentUpon>Clase7-2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clase7.aspx.cs">
+      <DependentUpon>Clase7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clase7.aspx.designer.cs">
+      <DependentUpon>Clase7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clase8-Ejercicio.aspx.cs">
+      <DependentUpon>Clase8-Ejercicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clase8-Ejercicio.aspx.designer.cs">
+      <DependentUpon>Clase8-Ejercicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clase8.aspx.cs">
+      <DependentUpon>Clase8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clase8.aspx.designer.cs">
+      <DependentUpon>Clase8.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Clse5-Alta.aspx.cs">
       <DependentUpon>Clse5-Alta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Clse5-Alta.aspx.designer.cs">
       <DependentUpon>Clse5-Alta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta-ABM.aspx.cs">
+      <DependentUpon>Consulta-ABM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta-ABM.aspx.designer.cs">
+      <DependentUpon>Consulta-ABM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Consulta-P1.aspx.cs">
       <DependentUpon>Consulta-P1.aspx</DependentUpon>
@@ -363,12 +432,26 @@
     <Compile Include="ConsultasActividades-P1.aspx.designer.cs">
       <DependentUpon>ConsultasActividades-P1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConsultMarca-ABM.aspx.cs">
+      <DependentUpon>ConsultMarca-ABM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultMarca-ABM.aspx.designer.cs">
+      <DependentUpon>ConsultMarca-ABM.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default-ABM.aspx.cs">
+      <DependentUpon>Default-ABM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default-ABM.aspx.designer.cs">
+      <DependentUpon>Default-ABM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
