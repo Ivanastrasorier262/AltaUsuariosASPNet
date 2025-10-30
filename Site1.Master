@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Clase1_lp3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="Images/logo 2.png" alt="Asesoría Legal Global" class="logo" />
+                    <span class="company-name"><h1>Asesoría Legal Global</h1></span>
+                </div>
+                <p>
+                    &nbsp;</p>
+                <ul class="navbar-menu">
+                    <li>&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx">Registro</asp:HyperLink>
+                    </li>
+                    <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForm2.aspx">Gestion de documentos</asp:HyperLink>
+                        <br />
+                    </li>
+                       
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; <%: DateTime.Now.Year %> Asesoría Legal Global. Todos los derechos reservados.</p>
+                    <p>Servicios profesionales de asesoramiento legal | 2025</p>
+                    <img src="Images/logo1.png" alt="Asesoría Legal Global" class="logo" />
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
